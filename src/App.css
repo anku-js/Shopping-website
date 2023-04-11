@@ -1,19 +1,20 @@
-
 * {
   margin: 0;
   padding: 0;
 }
 
-body {
-  display:flex;
-  align-items: center;
-  justify-content: center;
+.container {
   background: url(../public/background.jpg) no-repeat;
-  background-size: cover;
-  font-family: 'Karla', sans-serif;
+  background-size: cover; 
+  width: 100%;
+  min-height: 100vh;
 }
 
-.container {
+.container.searching {
+  background: none;
+}
+
+.first-page {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,29 +30,44 @@ body {
   top: 40px;
 }
 
-.search-label {
-  margin-top: 140px;
-  width: 860px;
-  height: 80px;
-  display: flex;
-  align-items: center;
-}
-
-.search-input {
-  width: 780px;
-  height: 80px;
-  border: none;
-  border-radius: 20px;
-  padding: 0px 20px; 
-  font-weight: 400;
-  font-size: 32px;
-
-}
-
 input:focus {
   outline: none;
 }
 
+.container .search-input {
+  border: none;
+  border-radius: 20px;
+  width: 780px;
+  height: 80px;
+  padding: 0px 20px;
+  font-size: 32px;
+}
+
+.container.searching .search-input {
+  border: 0.686747px solid rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  width: 520px;
+  height: 40px;
+  padding: 0px 10px;
+  font-size: 20px;
+}
+
+.container .search-label {
+  width: 860px;
+  height: 80px;
+  padding: 0px 20px;
+  font-size: 32px;
+  margin-top: 140px;
+}
+
+.container.searching .search-label {
+  border: #000000;
+  width: 520px;
+  height: 40px;
+  padding: 0px 10px;
+  font-size: 20px;
+  margin-top: 30px;
+}
 
 .latest-trends-container {
   width: 1025px;
@@ -61,16 +77,22 @@ input:focus {
   border-radius: 4px;
 }
 
-.latest-trends{
+.all-suggestions{
   padding: 40px;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .latest-trends-items {
+  display: flex;
+  flex-wrap: wrap;
   padding: 20px 0px;
 }
 
 h2 {
-  word-spacing: 5%;
+  word-spacing: 2px;
   font-weight: 520;
   font-size: 20px;
   line-height: 27px;
@@ -95,9 +117,92 @@ h2 {
   font-size: 14px;
   padding: 15px 0px;
   color: #000000;
-
 }
 p {
   word-spacing: 2%;
   padding: 6px 0px;
 }
+
+.second-container {
+  display: flex;
+  width: 100%; 
+}
+
+.sidebar-container {
+  width: 15%;
+  background-color: #FFFFFF;
+  padding: 30px;
+ }
+
+h1 {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 48px;
+}
+
+.brand {
+  padding: 10px 0px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.brand-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+}
+
+.price {
+  padding: 10px 0px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.price-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+}
+
+.ratings {
+  padding: 10px 0px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.rating-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+}
+
+ label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  padding: 5px;
+ }
+
+ .products-container {
+  background-color: #FFFFFF;
+ }
+
+ .products {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  margin-left: 40px;
+  padding: 20px;
+ }
+
+ .searched-image {
+  width: 200px;
+  height: 300px;
+  background-color: aquamarine;
+ }

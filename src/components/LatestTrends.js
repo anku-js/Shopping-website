@@ -3,13 +3,15 @@ import { useState } from "react";
 export default function LatestTrends() {
     return (
         <div className="latest-trends-container">
-            <section className="latest-trends">
-                <section>
+            <div className="all-suggestions">
+                <section className="latest-trends">
                     <h2>Latest Trends</h2>
-                    <div  className="latest-trends-items">
-                        <div src="" className="latest-trends-image"></div>
-                        <p className="latest-trends-p">searches here</p>
-                    </div>
+                    <ul  className="latest-trends-items"> 
+                        <li>
+                            <div src="" className="latest-trends-image"></div>
+                            <p className="latest-trends-p">searches here</p>
+                        </li>                        
+                    </ul>
                 </section>               
                 <section className="popular-suggestions">
                     <h2>Popular suggestions</h2>
@@ -21,7 +23,7 @@ export default function LatestTrends() {
                         <p>Solid tshirts</p>
                     </div>
                 </section>
-            </section>
+            </div>
         </div>
     )
 }
