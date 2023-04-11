@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -5,28 +6,98 @@
 
 body {
   display:flex;
+  align-items: center;
   justify-content: center;
-  align-self: center;
-  background: url(../public/priscilla-du-preez-dlxLGIy-2VU-unsplash\ \(1\).jpg) no-repeat;
+  background: url(../public/background.jpg) no-repeat;
   background-size: cover;
   font-family: 'Karla', sans-serif;
 }
-.search-label {
-  display: block;
-  margin-top: 162px;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
+
+.zevi-logo {
+  position: absolute;
+  width: 86px;
+  height: 44.69px;
+  left: 1286px;
+  top: 40px;
+}
+
+.search-label {
+  margin-top: 140px;
+  width: 860px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
 .search-input {
-  width: 880px;
+  width: 780px;
   height: 80px;
   border: none;
   border-radius: 20px;
-  padding: 0px 20px;
-  
-font-weight: 400;
-font-size: 32px;
+  padding: 0px 20px; 
+  font-weight: 400;
+  font-size: 32px;
 
 }
 
 input:focus {
   outline: none;
+}
+
+
+.latest-trends-container {
+  width: 1025px;
+  height: 540px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+
+.latest-trends{
+  padding: 40px;
+}
+
+.latest-trends-items {
+  padding: 20px 0px;
+}
+
+h2 {
+  word-spacing: 5%;
+  font-weight: 520;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.latest-trends-image {
+  width: 130px;
+  height: 180px;
+  background-color: aquamarine;
+}
+
+.latest-trends-p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19px;
+  padding: 5px;
+  color: #000000;
+}
+
+.popular-suggestions-p {
+  font-weight: 400;
+  font-size: 14px;
+  padding: 15px 0px;
+  color: #000000;
+
+}
+p {
+  word-spacing: 2%;
+  padding: 6px 0px;
 }
