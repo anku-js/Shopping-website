@@ -23,6 +23,7 @@
 }
 
 .zevi-logo {
+  background: none;
   position: absolute;
   width: 86px;
   height: 44.69px;
@@ -53,19 +54,17 @@ input:focus {
 }
 
 .container .search-label {
-  width: 860px;
+  width: 780px;
   height: 80px;
-  padding: 0px 20px;
-  font-size: 32px;
   margin-top: 140px;
+  gap: 0;
+  padding: 0;
 }
 
 .container.searching .search-label {
   border: #000000;
   width: 520px;
   height: 40px;
-  padding: 0px 10px;
-  font-size: 20px;
   margin-top: 30px;
 }
 
@@ -205,4 +204,123 @@ h1 {
   width: 200px;
   height: 300px;
   background-color: aquamarine;
+ }
+
+ @media screen and (max-width: 780px) {
+  .first-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container .search-input {
+    border-radius: 10px;
+    width: 280px;
+    height: 50px;
+    padding: 0px 20px;
+    font-size: 18px;
+  }
+
+  .container.searching .search-input {
+    border: 0.686747px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    width: 220px;
+    height: 30px;
+    padding: 0px 10px;
+    font-size: 20px;
+  }
+   
+  .container .search-label {
+    width: 280px;
+    height: 60px;
+    margin-top: 140px;
+    gap: 0;
+    font-size: 26px;
+    padding: 0;
+  }
+
+  .container.searching .search-label {
+    border: #000000;
+    width: 320px;
+    height: 30px;
+    margin-top: 30px;
+    font-size: 20px;
+  }
+
+  .latest-trends-container {
+    width: 325px;
+    height: 540px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+  }
+
+  .zevi-logo {
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    left: 320px;
+    top: 30px;
+  }
+
+  .second-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+  }
+
+  .sidebar-container {
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 10px;
+   }
+
+   h1 {
+    font-weight: 400;
+    font-size: 15px;
+  }
+
+  .brand {
+    padding: 0;
+    font-weight: 500;
+    font-size: 12px;
+  }
+  
+  .brand-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+  }
+  
+  .price {
+    padding: 0px;
+    font-weight: 500;
+    font-size: 12px;
+  }
+  
+  .price-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+  }
+  
+  .ratings {
+    padding: 10px 0px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+  }
+  
+  .rating-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+  }
+
+  .sidebar-section {
+    display: flex;
+  }
  }

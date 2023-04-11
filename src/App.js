@@ -9,7 +9,7 @@ import "./App.css"
 function App() {
 
   const [ searched, setSearched] = useState("");
-  const [isInputFocused, setIsInputFocused] = useState(false)
+  const [isInputFocused, setIsInputFocused] = useState(true)
 
 
   function handleOnFocus() {
@@ -25,14 +25,12 @@ function App() {
     setSearched(value)
   }
 
+
  const styles = {
   position: "relative",
   right: searched == "" ? "10%" : "8%",
-  fontSize: searched == "" ? "40px" : "30px"
+  
  }
-
- 
- 
 
   return (
     <section className={`container ${!!searched ? "searching" : ""}`}>
