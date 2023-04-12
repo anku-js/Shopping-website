@@ -1,29 +1,43 @@
 {
     "latestTrends": [
       {
-        "id": 1,
-        "image": "https://ik.imagekit.io/ankujs/latest-trend-1.jpg",
-        "title": "Shirt with puffed sleeves"
+        "productId": 30,
+        "productName": "Khushal K Ethnic Motifs Embroidered Sequined Kurta with Palazzos \u0026 Dupatta",
+        "searchImage": "http://assets.myntassets.com/assets/images/22120556/2023/2/25/31818595-3bda-4e8b-a93b-6cfc566126541677314970376KhushalKwomenEmbroideryKurtaandpalazzowithdupattaset1.jpg",
       },
       {
-        "id": 2,
-        "image": "https://ik.imagekit.io/ankujs/latest-trend-2.jpg",
-        "title": "Linen jumpsuit"
+        "productId": 31,
+        "productName": "KALINI Women Beige Floral Yoke Design Straight Kurta with Trousers \u0026 With Dupatta",
+        "searchImage": "http://assets.myntassets.com/assets/images/18652620/2022/8/26/4d5f7043-a460-42e5-b67a-b04d9c0bc7041661503606623-KALINI-Women-Beige-Floral-Yoke-Design-Kurta-with-Trousers--W-1.jpg",
       },
       {
-        "id": 3,
-        "image": "https://ik.imagekit.io/ankujs/latest-trend-3.jpg",
-        "title": "White formal suit"
+        "productId": 32,
+        "productName": "Khushal K Women Black Ethnic Motifs Printed Kurta with Palazzos \u0026 With Dupatta",
+        "searchImage": "http://assets.myntassets.com/assets/images/17048614/2022/2/4/b0eb9426-adf2-4802-a6b3-5dbacbc5f2511643971561167KhushalKWomenBlackEthnicMotifsAngrakhaBeadsandStonesKurtawit7.jpg",
       },
       {
-        "id": 4,
-        "image": "https://ik.imagekit.io/ankujs/latest-trend-4.jpg",
-        "title": "Pattern dresses"
+        "productId": 33,
+        "productName": "Label Shaurya Sanadhya Ethnic Motifs Embroidered Sequinned Kurta with Trousers \u0026 Dupatta",
+        "searchImage": "http://assets.myntassets.com/assets/images/22402544/2023/3/19/5e2e724c-b2fc-40da-9eb9-f4c231dbdb141679200209109PeachLaceKurtaSet1.jpg",
       },
       {
-        "id": 5,
-        "image": "https://ik.imagekit.io/ankujs/latest-trend-5.jpg",
-        "title": "Leather shirt dress"
+        "productId": 34,
+        "productName": "KALINI Women Green Embroidered Thread Work Kurta with Trousers \u0026 Dupatta",
+        "searchImage": "http://assets.myntassets.com/assets/images/20498352/2022/10/22/3424a72e-8518-4853-aa99-e48a0e1205841666419466834KALINIWomenPistaGreenStraightKurtawithTrouserDupatta1.jpg",
+      },
+      {
+        "productId": 35,
+        "productName": "Virah Fashion Women Off White Ethnic Motifs Embroidered Sequinned Kurta with Sharara \u0026 With Dupatta",
+        "rating": 4,
+        "ratingCount": 178,
+        "searchImage": "http://assets.myntassets.com/assets/images/21655018/2023/1/21/6c11ad80-d6df-45af-a739-063bd1e16bfd1674296772975CreamcoloredsequncelakhnaviwovenGeorgettekurtaandshararaset1.jpg",
+        "mrp": 4999,
+        "price": 2499
+      },
+      {
+        "productId": 36,
+        "productName": "Ahalyaa Women Beige Floral Printed Regular Gotta Patti Kurta with Palazzos \u0026 With Dupatta",
+        "searchImage": "http://assets.myntassets.com/assets/images/14951330/2022/2/16/e6b90907-a613-45e1-9b2e-988caaba36581645010770505-Ahalyaa-Women-Beige-Floral-Printed-Regular-Gotta-Patti-Kurta-1.jpg",
       }
     ],
     "products": [
