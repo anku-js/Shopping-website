@@ -1,0 +1,184 @@
+{
+
+    "products": [
+      {
+        "productId": 1,
+        "productName": "ZOLA Women White Exclusive Georgette Lucknowi Chikankari",
+        "rating": 4,
+        "ratingCount": 134,
+        "searchImage": "http://assets.myntassets.com/assets/images/15033302/2022/6/26/99cc9ebd-2703-41e0-9230-dee45f42ca371656219440813ZOLAWomenWhiteExclusiveGeorgetteLucknowiChikankari1.jpg",
+        "mrp": 4650,
+        "price": 1999
+      },
+      {
+        "productId": 2,
+        "productName": "AHIKA Cream-Coloured \u0026 Coral Orange Equal Striped Straight Kurta",
+        "rating": 3,
+        "ratingCount": 7954,
+        "searchImage": "http://assets.myntassets.com/assets/images/9222051/2019/5/10/d27f24c3-c15d-41b2-a215-4e77f88925971557486405194-Vaamsi-Women-Kurtas-1941557486403191-1.jpg",
+        "mrp": 1198,
+        "price": 646
+      },
+      {
+        "productId": 3,
+        "productName": "Vbuyz Women Sea Green \u0026 Yellow Ethnic Motifs Printed Anarkali Kurta With Shrug",
+        "rating": 4,
+        "ratingCount": 390,
+        "searchImage": "http://assets.myntassets.com/assets/images/15649358/2021/9/28/2aa3f04a-8155-4060-bcec-f8b3d696df541632822117814VbuyzWomenYellowEthnicMotifsPrintedAnarkaliKurta1.jpg",
+        "mrp": 5499,
+        "price": 1924
+      },
+      {
+        "productId": 4,
+        "productName": "Shae by SASSAFRAS Women Blue \u0026 Mustard Yellow Printed Off-Shoulder Anarkali Kurta",
+        "rating": 4,
+        "ratingCount": 3093,
+        "searchImage": "http://assets.myntassets.com/assets/images/11349844/2020/1/21/7f3e8d8f-3835-4d45-b896-6a0de54905101579595483764-Shae-by-SASSAFRAS-Women-Blue--Mustard-Printed-Anarkali-Kurta-1.jpg",
+        "mrp": 1999,
+        "price": 719
+      },
+      {
+        "productId": 5,
+        "productName": "kipek Women Red \u0026 Gold-Toned Printed Straight Kurta",
+        "rating": 4,
+        "searchImage": "http://assets.myntassets.com/assets/images/12015446/2020/8/7/375c42da-f543-4098-98e1-86a015e7ed3f1596776815532-Womens-Rayon-Self-Design-Straight-Kurta-Red-1391596776813529-1.jpg",
+        "mrp": 1799,
+        "price": 749
+      },
+      {
+        "productId": 6,
+        "productName": "Anouk Women Magenta Embroidered Stripe Thread Work Pure Cotton Kurta",
+        "rating": 4,
+        "ratingCount": 346,
+        "searchImage": "http://assets.myntassets.com/assets/images/17090608/2022/4/29/2c44d6d8-24ad-4e4f-93ec-42678534fcb71651212344374-Anouk-Women-Kurtas-791651212343963-1.jpg",
+        "mrp": 2099,
+        "price": 629
+      },
+      {
+        "productId": 7,
+        "productName": "MomToBe Women Purple  Floral Yoke Design Thread Work Maternity Nursing Anarkali Kurta",
+        "rating": 3,
+        "ratingCount": 45,
+        "searchImage": "http://assets.myntassets.com/assets/images/17084804/2022/2/8/9788403f-3fff-48a5-9c8c-558032f2f7111644321386853MomToBeWomenPurpleGeometricYokeDesignFlaredSleevesMaternityA1.jpg",
+        "mrp": 3497,
+        "price": 1014
+      },
+      {
+        "productId": 8,
+        "productName": "Varanga Women Purple \u0026 Off White Leheriya Striped Gotta Patti Kurta",
+        "rating": 4,
+        "ratingCount": 934,
+        "searchImage": "http://assets.myntassets.com/assets/images/14904336/2021/7/22/fd22f578-e747-4a48-9ea3-ab6951720a2e1626975171810VarangaWomenPurpleLeheriyaStripedFlaredSleevesGottaPattiKurt1.jpg",
+        "mrp": 3299,
+        "price": 791
+      },
+      {
+        "productId": 9,
+        "productName": "W Women Dark Brown Acrylic  Thread Work Yoke Design Straight Kurta",
+        "rating": 4,
+        "ratingCount": 216,
+        "discount": 1000,
+        "searchImage": "http://assets.myntassets.com/assets/images/16519628/2021/12/15/f84df916-ce2e-4953-a0d3-620dd28f9a4c1639546824770WWomenBrownKurta1.jpg",
+        "mrp": 1999,
+        "price": 999
+      },
+      {
+        "productId": 10,
+        "productName": "Anouk Women Orange \u0026 White Floral Printed Kurta",
+        "rating": 3.9976303577423096,
+        "ratingCount": 422,
+        "searchImage": "http://assets.myntassets.com/assets/images/17094638/2022/3/9/962cd196-ca89-47ca-ab61-3d6bea68a4cd1646814715110DressBerryWomenPinkStripedMaxiDressTrackPantsMastHarbourMenT1.jpg",
+        "mrp": 1699,
+        "price": 509
+      },
+      {
+        "productId": 11,
+        "productName": "KAAJH Women Blue \u0026 White Tie \u0026 Dye Cotton Kurta",
+        "rating": 4,
+        "ratingCount": 277,
+        "searchImage": "http://assets.myntassets.com/assets/images/17334128/2022/4/6/4648e3ea-0611-4710-a62a-8e37ff1b5a991649234227633-KAAJH-Women-Blue--White-Dyed-Gotta-Patti-Kurta-8981649234227-1.jpg",
+        "mrp": 1999,
+        "price": 959
+      },
+      {
+        "productId": 12,
+        "productName": "KALINI Women Maroon \u0026 Gold-Toned Ethnic Motifs Printed Flared Sleeves Gotta Patti Anarkali Kurta",
+        "rating": 4,
+        "ratingCount": 1804,
+        "searchImage": "http://assets.myntassets.com/assets/images/16947966/2022/1/27/4cbf1e43-79ff-42d4-af54-d7ad7a6ccc391643272377504KALINIWomenMaroonAnarkaliKurta1.jpg",
+        "mrp": 2499,
+        "price": 949
+      },
+      {
+        "productId": 13,
+        "productName": "Libas Checked Symmetrical Kurta in Military Green \u0026 Black",
+        "rating": 4,
+        "ratingCount": 8308,
+        "searchImage": "http://assets.myntassets.com/assets/images/2440768/2022/5/10/47d10958-5ffa-4471-bfeb-f4ff5c5ae8611652166522085-Libas-Checked-Symmetrical-Kurta-in-Military-Green--Black-443-1.jpg",
+        "mrp": 1299,
+        "price": 519
+      },
+      {
+        "productId": 14,
+        "productName": "Anouk Women Orange \u0026 Green Printed Straight Kurta",
+        "rating": 3,
+        "ratingCount": 12666,
+        "searchImage": "http://assets.myntassets.com/assets/images/2472856/2018/4/7/11523086508486-Anouk-Women-Orange--Green-Printed-Straight-Kurta-7901523086508323-1.jpg",
+        "mrp": 1599,
+        "price": 639
+      },
+      {
+        "productId": 15,
+        "productName": "FASHOR Women Navy Blue Yoke Design Keyhole Neck Kurta",
+        "rating": 3.88043475151062,
+        "ratingCount": 92,
+        "searchImage": "http://assets.myntassets.com/assets/images/18293100/2022/5/17/a4d736e3-8218-413b-a8ad-4409f777410b1652781128592FASHORWomenNavyBlueGeometricYokeDesignKeyholeNeckFlaredSleev1.jpg",
+        "mrp": 2699,
+        "price": 1049
+      },
+      {
+        "productId": 16,
+        "productName": "Libas Women Blue Striped Keyhole Neck Kurta",
+        "rating": 4,
+        "ratingCount": 1976,
+        "searchImage": "http://assets.myntassets.com/assets/images/productimage/2021/6/17/5c442a94-fde2-42e9-b9e6-f7e600787e4b1623912914326-1.jpg",
+        "mrp": 1299,
+        "price": 519
+      },
+      {
+        "productId": 17,
+        "productName": "Shae by SASSAFRAS Women Peach-Coloured \u0026 Pink Printed Anarkali Kurta",
+        "rating": 4,
+        "ratingCount": 1798,
+        "searchImage": "http://assets.myntassets.com/assets/images/11636340/2020/3/6/1e10a23e-490e-44d9-b373-f4f631d39ae91583496494080-Shae-by-SASSAFRAS-Women-Peach-Coloured--Pink-Printed-Anarkal-1.jpg",
+        "year": "2020"
+      },
+      {
+        "productId": 18,
+        "productName": "Nayo Women Black \u0026 Red Paisley Print Straight Kurta",
+        "rating": 3,
+        "ratingCount": 283,
+        "searchImage": "http://assets.myntassets.com/assets/images/16877608/2022/1/19/298602c3-c7a7-4ac3-a943-af56cd8555741642585918716Kurtas1.jpg",
+        "mrp": 1299,
+        "price": 649
+      },
+      {
+        "productId": 19,
+        "productName": "Sztori Plus Size Women Black Geometric Yoke Design Anarkali Kurta With Dupatta",
+        "rating": 4,
+        "ratingCount": 73,
+        "searchImage": "http://assets.myntassets.com/assets/images/16926354/2022/9/14/c248b853-24d9-43b3-9cf7-b8c59c67ee2b1663161995067-Sztori-Plus-Size-Women-Black-Geometric-Yoke-Design-Anarkali--1.jpg",
+        "mrp": 3099,
+        "price": 929
+      },
+      {
+        "productId": 20,
+        "productName": "KALINI Women Green \u0026 Yellow Ethnic Motifs Printed Thread Work Anarkali Kurta",
+        "rating": 4,
+        "ratingCount": 2772,
+        "searchImage": "http://assets.myntassets.com/assets/images/16505426/2021/12/13/811d69bb-f797-4b1e-926e-90777ba03b8e1639401131242KALINIWomenGreenStripedFlaredSleevesFloralAnarkaliKurta1.jpg",
+        "mrp": 1999,
+        "price": 899
+      }
+    ]
+  }
