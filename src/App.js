@@ -5,7 +5,6 @@ import LatestTrends from "./components/LatestTrends"
 import SecondPage from "./components/SecondPage"
 import "./App.css"
 
-
 function App() {
   const [ productData, setProductData] = useState({})
   const [filteredData, setFilteredData] = useState([])
@@ -39,7 +38,7 @@ function App() {
   fetch("https://my-json-server.typicode.com/anku-js/Zevi/db.json/db/products")
   .then(res => res.json())
   .then(data => setProductData(data))
-  setFilteredData(productData)
+ 
 }, [])
 
 console.log(filteredData)
