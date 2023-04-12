@@ -4,14 +4,15 @@ import { CiSearch } from "react-icons/ci"
 import LatestTrends from "./components/LatestTrends"
 import SecondPage from "./components/SecondPage"
 import "./App.css"
+import Data from "../db"
 
 
 function App() {
-
+  const [ data, setData] = useState(Data)
   const [ searched, setSearched] = useState("");
   const [isInputFocused, setIsInputFocused] = useState(true)
 
-
+console.log(data)
   function handleOnFocus() {
     setIsInputFocused(true)
   }
@@ -26,11 +27,7 @@ function App() {
   }
 
 
- const styles = {
-  position: "relative",
-  right: searched == "" ? "10%" : "8%",
-  
- }
+
 
   return (
     <section className={`container ${!!searched ? "searching" : ""}`}>
@@ -46,7 +43,7 @@ function App() {
               onFocus={handleOnFocus}
               onBlur={handleBlur}
             />
-            <CiSearch style={styles}/>
+            <CiSearch className="searchIcon"/>
           </label>
           { (isInputFocused && searched.length === 0) ? <LatestTrends /> : null}
           { searched !== "" ?  <SecondPage />  : null}

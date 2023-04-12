@@ -1,11 +1,19 @@
+import { useState } from "react"
 import zevi from "../images/zevi.svg"
-import { AiFillStar, AiOutlineStar } from "react-icons/ai"
+import { AiFillStar, AiOutlineStar, AiFillHeart, AiOutlineHeart } from "react-icons/ai"
 import { BsStarHalf } from "react-icons/bs"
 import { IoIosArrowDown } from "react-icons/io"
 
 export default function SecondPage() {
+const [ wishlist, setWishlist ] = useState(false)
+
+function handleClick() {
+    setWishlist(!wishlist)
+}
+
     const starFilled = <AiFillStar />
     const starEmpty = <AiOutlineStar />
+
     return (
         <div className="second-container">
             <div className="sidebar-container">
@@ -54,12 +62,18 @@ export default function SecondPage() {
                     </div>
                 </section>
             </div> 
-            <section className="products-container">
-                <ul className="products">
-                    <li>
-                        <div className="searched-image"></div>
-                        <p>name of searched</p>
-                    </li>                   
+            <section className="product-container">
+                <ul className="result-product">
+                        <li className="product">
+                            <div className="searched-image"></div>
+                            <p>name of searched</p>
+                            <div className="wishlist" onClick={handleClick}>
+                            { wishlist? <AiFillHeart className="filled-heart"/> : <AiOutlineHeart className="empty-heart"/>}</div>
+                            <div className="view-product">
+                              <p className="view-product-text" >View Product</p>
+                            </div> 
+                        </li> 
+                                                                                 
                 </ul> 
             </section>
                           
