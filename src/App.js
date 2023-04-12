@@ -8,9 +8,9 @@ import "./App.css"
 function App() {
   const [ productData, setProductData] = useState({})
   const [filteredData, setFilteredData] = useState([])
-  const [ suggestionData, setSuggestionData] = useState({})
+  const [ suggestionData, setSuggestionData] = useState([])
   const [ searched, setSearched] = useState("");
-  const [isInputFocused, setIsInputFocused] = useState(true)
+  const [isInputFocused, setIsInputFocused] = useState(false)
 
 
   function handleOnFocus() {
@@ -22,11 +22,11 @@ function App() {
   }
 
     const searchedProduct = (event) => {
-      setSearched(event.target.value)
-    
+      const searchedValue = event.target.value
+      setSearched(searchedValue)
       if (searched !== '') {
-        const results = productData.filter((search) => {
-          return search.productName.toLowerCase().includes(searched.toLowerCase());   
+        const results = productData.filter((product) => {
+          return product.name.toLowerCase().includes(searchedValue.toLowerCase());   
         });
         setFilteredData(results);
       } else {
@@ -38,10 +38,13 @@ function App() {
   fetch("https://my-json-server.typicode.com/anku-js/Zevi/db.json/db/products")
   .then(res => res.json())
   .then(data => setProductData(data))
- 
 }, [])
 
-console.log(filteredData)
+useEffect(function() {
+  fetch("https://my-json-server.typicode.com/anku-js/Zevi/latestTrends")
+  .then(res => res.json())
+  .then(data => setSuggestionData(data))
+}, [])
 
   return (
     <section className={`container ${!!searched ? "searching" : ""}`}>
@@ -61,7 +64,7 @@ console.log(filteredData)
               <CiSearch className="searchIcon"/>
             </label>
           </form>         
-          { (isInputFocused && searched.length === 0) ? <LatestTrends /> : null}
+          { (isInputFocused && searched.length === 0) ? <LatestTrends suggestionData={suggestionData}/> : null}
           { searched !== "" ?  <SecondPage filteredData={filteredData}/>  : null}
         </div>   
     </section>

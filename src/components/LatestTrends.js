@@ -1,16 +1,21 @@
 import { useState } from "react";
 
-export default function LatestTrends() {
+export default function LatestTrends(props) {
+console.log(props, "avcn")
+const mappedLatestTrends = props?.suggestionData?.map(({ id, name, img})=> 
+    <li key={id} className="latesttrends-list">
+        <img src={img} className="latest-trends-image" />
+        <p className="latest-trends-p">{name}</p>
+    </li>
+    )
+
     return (
         <div className="latest-trends-container">
             <div className="all-suggestions">
                 <section className="latest-trends">
                     <h2>Latest Trends</h2>
                     <ul  className="latest-trends-items"> 
-                        <li>
-                            <div src="" className="latest-trends-image"></div>
-                            <p className="latest-trends-p">searches here</p>
-                        </li>                        
+                         {mappedLatestTrends}                       
                     </ul>
                 </section>               
                 <section className="popular-suggestions">
