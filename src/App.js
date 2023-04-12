@@ -8,6 +8,7 @@ import "./App.css"
 
 function App() {
   const [ productData, setProductData] = useState({})
+  const [filteredData, setFilteredData] = useState([])
   const [ suggestionData, setSuggestionData] = useState({})
   const [ searched, setSearched] = useState("");
   const [isInputFocused, setIsInputFocused] = useState(true)
@@ -21,19 +22,27 @@ function App() {
     setIsInputFocused(false)
   }
 
-  function handleChange(event) {
-    const { value } = event.target
-    setSearched(value)
-  }
-
-console.log(productData)
-
+    const searchedProduct = (event) => {
+      setSearched(event.target.value)
+    
+      if (searched !== '') {
+        const results = productData.filter((search) => {
+          return search.productName.toLowerCase().includes(searched.toLowerCase());   
+        });
+        setFilteredData(results);
+      } else {
+        setFilteredData(productData); 
+      } 
+    }
+  
   useEffect(function() {  
   fetch("https://my-json-server.typicode.com/anku-js/Zevi/db.json/db/products")
   .then(res => res.json())
   .then(data => setProductData(data))
+  setFilteredData(productData)
 }, [])
 
+console.log(filteredData)
 
   return (
     <section className={`container ${!!searched ? "searching" : ""}`}>
@@ -46,7 +55,7 @@ console.log(productData)
                 name="first-search"
                 className="search-input"
                 placeholder="Search"
-                onChange={handleChange}
+                onChange={searchedProduct}
                 onFocus={handleOnFocus}
                 onBlur={handleBlur}
               />
@@ -54,7 +63,7 @@ console.log(productData)
             </label>
           </form>         
           { (isInputFocused && searched.length === 0) ? <LatestTrends /> : null}
-          { searched !== "" ?  <SecondPage productData={productData}/>  : null}
+          { searched !== "" ?  <SecondPage filteredData={filteredData}/>  : null}
         </div>   
     </section>
     

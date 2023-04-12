@@ -14,7 +14,7 @@ function handleClick(id) {
 const starFilled = <AiFillStar className="filled-star"/>
 const starEmpty = <AiOutlineStar className="empty-star"/>
 
-const mapped = props.productData.map(({ productId, productName, rating, ratingCount, searchImage,  mrp, price})=> 
+const mapped = props.filteredData.map(({ productId, productName, rating, ratingCount, searchImage,  mrp, price})=> 
 
         <ul className="result-product">
             <li className="product">
