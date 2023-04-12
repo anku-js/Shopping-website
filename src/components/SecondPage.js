@@ -4,16 +4,41 @@ import { AiFillStar, AiOutlineStar, AiFillHeart, AiOutlineHeart } from "react-ic
 import { BsStarHalf } from "react-icons/bs"
 import { IoIosArrowDown } from "react-icons/io"
 
-export default function SecondPage() {
+export default function SecondPage(props) {
 const [ wishlist, setWishlist ] = useState(false)
 
-function handleClick() {
+function handleClick(id) {
     setWishlist(!wishlist)
 }
 
-    const starFilled = <AiFillStar />
-    const starEmpty = <AiOutlineStar />
+const starFilled = <AiFillStar className="filled-star"/>
+const starEmpty = <AiOutlineStar className="empty-star"/>
 
+const mapped = props.productData.map(({ productId, productName, rating, ratingCount, searchImage,  mrp, price})=> 
+
+        <ul className="result-product">
+            <li className="product">
+                <img src={searchImage} className="searched-image" />
+                <div className="information">
+                    <p className="product-name">{productName}</p>
+                    <div className="wishlist" onClick={()=>handleClick(productId)}>
+                    { wishlist? <AiFillHeart className="filled-heart"/> : <AiOutlineHeart className="empty-heart"/>}
+                    </div>
+                    <div className="mrp-price">
+                        <p className="mrp"><s>Rs. {mrp}</s></p><p className="product-price">Rs. {price}</p>
+                    </div>
+                    <div className="rating-count">
+                      <div>{starFilled}{starFilled}{starFilled}{starFilled}{starFilled}</div>
+                      <div>({ratingCount})</div>
+                    </div>
+                </div>
+                <div className="view-product">
+                <p className="view-product-text" >View Product</p>
+                </div> 
+            </li>                                                                   
+        </ul>
+        )
+    
     return (
         <div className="second-container">
             <div className="sidebar-container">
@@ -63,20 +88,11 @@ function handleClick() {
                 </section>
             </div> 
             <section className="product-container">
-                <ul className="result-product">
-                        <li className="product">
-                            <div className="searched-image"></div>
-                            <p>name of searched</p>
-                            <div className="wishlist" onClick={handleClick}>
-                            { wishlist? <AiFillHeart className="filled-heart"/> : <AiOutlineHeart className="empty-heart"/>}</div>
-                            <div className="view-product">
-                              <p className="view-product-text" >View Product</p>
-                            </div> 
-                        </li> 
-                                                                                 
-                </ul> 
+                {mapped}
             </section>
                           
         </div>
     )
 }
+
+// { productName, rating, ratingCount, searchImage,  mrp, price}
