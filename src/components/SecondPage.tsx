@@ -103,6 +103,7 @@ const SecondPage: FunctionComponent<Props> = ({ filteredData }) => {
             price={price}
           />
         ))}
+        {filteredData.length == 0 && <p className="no-data">No results found</p> }
       </section>
     </div>
   );

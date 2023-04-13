@@ -1,8 +1,8 @@
 import React, { FunctionComponent } from "react";
-import { Trend } from "../types"
+import { Trend } from "../types";
 
 interface Props {
-    trends: Trend[];
+  trends: Trend[];
 }
 
 const LatestTrends: FunctionComponent<Props> = ({ trends }) => {
