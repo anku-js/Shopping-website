@@ -44,5 +44,9 @@
   "devDependencies": {
     "@faker-js/faker": "^7.6.0",
     "sass": "^1.62.0"
+  },
+  "engines": {
+    "node": "18.15.0",
+    "npm": "9.6.2"
   }
 }
