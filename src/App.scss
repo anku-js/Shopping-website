@@ -8,7 +8,7 @@ $paragraph: 16px;
 
 .wrapping-box {
   background: url(../public/background.jpg) no-repeat;
-  background-size: cover;   
+  background-size: cover;
 }
 
 .wrapping-box.searching {
@@ -57,7 +57,6 @@ input:focus {
   outline: none;
 }
 
-
 .wrapping-box.searching .input-form {
   margin-top: 40px;
   border: #000000;
@@ -78,20 +77,21 @@ input:focus {
   width: 520px;
   height: 57px;
   padding: 0px 20px;
-  font-size: 21.9759px ;
-  border-radius: 13.7349px
+  font-size: 21.9759px;
+  border-radius: 13.7349px;
 }
 
 .all-suggestions-container {
   width: 1025px;
   min-height: 540px;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
   .all-suggestions {
     padding: 30px 40px;
   }
   h2 {
+    margin-top: 10px;
     word-spacing: 2px;
     font-weight: 520;
     font-size: $heading;
@@ -109,7 +109,6 @@ input:focus {
     padding: 10px 0px;
     .latest-trends-image {
       width: 160px;
-      height: 220px;
       border-radius: 4px;
     }
     .latest-trends-p {
@@ -124,7 +123,7 @@ input:focus {
   }
   .popular-suggestions-p {
     font-size: 14px;
-    padding: 15px 0px;
+    padding: 10px 0px;
     color: #000000;
   }
 }
@@ -135,10 +134,10 @@ ul {
 
 .searched-page-container {
   display: flex;
-  width: 100%; 
+  width: 100%;
   .sidebar-container {
     width: 20%;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     padding: 40px;
     h1 {
       font-weight: 400px;
@@ -156,8 +155,8 @@ ul {
         gap: 8px;
         padding: 5px;
         font-size: $paragraph;
-       }
-       .brand-option {
+      }
+      .brand-option {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -176,8 +175,8 @@ ul {
         gap: 8px;
         padding: 5px;
         font-size: $paragraph;
-       }
-       .price-option {
+      }
+      .price-option {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -194,15 +193,15 @@ ul {
         gap: 8px;
         padding: 5px;
         font-size: $paragraph;
-       }
-       .rating-option {
+      }
+      .rating-option {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 10px 0px;
       }
     }
-   }
+  }
   .products-container {
     width: 100%;
     display: flex;
@@ -210,89 +209,90 @@ ul {
     justify-content: flex-start;
     align-items: flex-start;
     padding: 40px;
-  .product {
-    position: relative;
-    margin: 20px;
-    .searched-image {
-      z-index: 1;
+    .product {
       position: relative;
-      width: 100%;
-      height: 300px;
-      border-radius: 4px;
-      display: block;
-    }
-    .searched-image:hover {
-      z-index: 0;
-    }
-    .information {
-      padding: 10px 0px;
-      .product-name {
-        display: block;
-        font-size: 14px;
-        line-height: 1;
-        margin: 0;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        width: 220px;
-        font-weight: 400;
-        font-size: $heading;
-        color: #000000;
-      }
-      .mrp-price {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 8px
-      }
-      .mrp {
-        font-weight: 300;
-        font-size: $heading;
-        color: rgba(0, 0, 0, 0.4);
-      }
-      .product-price {
-        font-weight: 600;
-        font-size: $heading;
-        line-height: 24px;
-        color: #6D84FF;
-      }
-      .rating-count {
-        display: flex;
-        align-items:self-start;
-        gap: 5px;
-        font-weight: 300;
-        font-size: 14px;
-        padding: 6px 0px;
-      }
-      .filled-heart, .empty-heart {
+      margin: 20px;
+      .searched-image {
         z-index: 1;
-        width: 30px;
-        height: 30px;
-        position: absolute;
-        top: 15px;
-        right: 12px;
-        color: #FFFFFF;
+        position: relative;
+        width: 100%;
+        height: 300px;
+        border-radius: 4px;
+        display: block;
       }
-
-      .filled-heart {
-        color: #D32424;
+      .searched-image:hover {
+        z-index: 0;
       }
-    }   
-  }
-  }
-} 
-  
-  .filled-star {
-    width: 20px;
-    height: 20px;
-    color: #FDD33D;
-  }
+      .information {
+        padding: 10px 0px;
+        .product-name {
+          display: block;
+          font-size: 14px;
+          line-height: 1;
+          margin: 0;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          width: 220px;
+          font-weight: 400;
+          font-size: $heading;
+          color: #000000;
+        }
+        .mrp-price {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 8px;
+        }
+        .mrp {
+          font-weight: 300;
+          font-size: $heading;
+          color: rgba(0, 0, 0, 0.4);
+        }
+        .product-price {
+          font-weight: 600;
+          font-size: $heading;
+          line-height: 24px;
+          color: #6d84ff;
+        }
+        .rating-count {
+          display: flex;
+          align-items: self-start;
+          gap: 5px;
+          font-weight: 300;
+          font-size: 14px;
+          padding: 6px 0px;
+        }
+        .filled-heart,
+        .empty-heart {
+          z-index: 1;
+          width: 30px;
+          height: 30px;
+          position: absolute;
+          top: 15px;
+          right: 12px;
+          color: #ffffff;
+        }
 
-  .empty-star {
-    width: 20px;
-    height: 20px;
-    color: #CDCCC8;
+        .filled-heart {
+          color: #d32424;
+        }
+      }
+    }
   }
+}
+
+.filled-star {
+  width: 20px;
+  height: 20px;
+  color: #fdd33d;
+}
+
+.empty-star {
+  width: 20px;
+  height: 20px;
+  color: #cdccc8;
+}
 
 .view-product {
   position: absolute;
@@ -307,15 +307,14 @@ ul {
   background: rgba(109, 132, 255, 0.71);
   z-index: 0;
   cursor: pointer;
-  .view-product-text { 
-    color: #FFFFFF;
+  .view-product-text {
+    color: #ffffff;
     font-weight: 500;
     font-size: $heading;
   }
 }
 
- @media screen and (max-width: 780px) {
-
+@media screen and (max-width: 780px) {
   .container {
     .zevi-logo {
       background: none;
@@ -329,7 +328,7 @@ ul {
 
   .wrapping-box {
     background: url(../public/background.jpg) no-repeat;
-    background-size: cover;   
+    background-size: cover;
     width: 100%;
   }
 
@@ -374,7 +373,7 @@ ul {
     padding: 0px 10px;
     font-size: $heading;
   }
-   
+
   .wrapping-box {
     &.searching {
       .searchIcon {
@@ -385,51 +384,59 @@ ul {
     }
   }
 
-  
   .wrapping-box.searching .searchIcon {
     position: relative;
     right: 10%;
     font-size: 20px;
   }
 
-
   .all-suggestions-container {
     width: 325px;
     height: 540px;
     overflow: hidden;
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
   }
 
   .searched-page-container {
     display: flex;
-    flex-direction: column;
-    width: 100%; 
+    flex-direction: column-reverse;
+    width: 100%;
     .sidebar-container {
       width: 80%;
-      background-color: #FFFFFF;
+      background-color: #ffffff;
       padding: 40px;
-     }
-     .products-container {
+    }
+    .products-container {
       justify-content: center;
       align-items: center;
       width: 100%;
       padding: 0;
       gap: 0;
-     }
-     .product {
+    }
+    .product {
       margin: 0;
-     }
-  }
-  .all-suggestions-container  {
-    .latest-trends-items {
-      display: flex;
-      flex-wrap: nowrap;
-      justify-content: space-between;
-      align-items: stretch;
-      padding: 10px 0px;
     }
   }
-  
- }
+  .all-suggestions-container {
+    width: 325px;
+    height: auto;
+    overflow: hidden;
+    background: #ffffff;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    margin-bottom: 30px;
+    .latest-trends-items {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      padding: 10px 0px;
+      gap: 20px;
+      margin: 20px 0;
+    }
+  }
+  .view-product {
+    z-index: 1;
+  }
+}
