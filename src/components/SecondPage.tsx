@@ -1,29 +1,19 @@
-import {
-  AiFillStar,
-  AiOutlineStar
-} from "react-icons/ai";
+import React, { FunctionComponent } from "react";
+import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 import { IoIosArrowDown } from "react-icons/io";
 import Products from "./Products";
+import { ProductData } from "./../types";
 
-export default function SecondPage(props) {
+interface Props {
+  filteredData: ProductData[];
+}
 
-  const starFilled = <AiFillStar className="filled-star" />;
+const SecondPage: FunctionComponent<Props> = ({ filteredData }) => {
+  const starFilledIcon = <AiFillStar className="filled-star" />;
   const starEmpty = <AiOutlineStar className="empty-star" />;
 
-  const productsToBeShown = props.filteredData.map(
-    (products => 
-        <Products 
-            key={products.id}
-            name={products.name}
-            img={products.img}
-            ratingCount={products.ratingCount}
-            mrp={products.mrp}
-            price={products.price}
-        />)
-     )
-
   return (
-    <div className="second-container">
+    <div className="searched-page-container">
       <div className="sidebar-container">
         <h1>Search Results</h1>
         <section className="sidebar-section">
@@ -61,39 +51,39 @@ export default function SecondPage(props) {
             </div>
             <label>
               <input type="checkbox" />
-              {starFilled}
-              {starFilled}
-              {starFilled}
-              {starFilled}
-              {starFilled}
+              {starFilledIcon}
+              {starFilledIcon}
+              {starFilledIcon}
+              {starFilledIcon}
+              {starFilledIcon}
             </label>
             <label>
               <input type="checkbox" />
-              {starFilled}
-              {starFilled}
-              {starFilled}
-              {starFilled}
-              {starEmpty}
-            </label>
-            <label>
-              <input type="checkbox" />
-              {starFilled}
-              {starFilled}
-              {starFilled}
-              {starEmpty}
+              {starFilledIcon}
+              {starFilledIcon}
+              {starFilledIcon}
+              {starFilledIcon}
               {starEmpty}
             </label>
             <label>
               <input type="checkbox" />
-              {starFilled}
-              {starFilled}
-              {starEmpty}
+              {starFilledIcon}
+              {starFilledIcon}
+              {starFilledIcon}
               {starEmpty}
               {starEmpty}
             </label>
             <label>
               <input type="checkbox" />
-              {starFilled}
+              {starFilledIcon}
+              {starFilledIcon}
+              {starEmpty}
+              {starEmpty}
+              {starEmpty}
+            </label>
+            <label>
+              <input type="checkbox" />
+              {starFilledIcon}
               {starEmpty}
               {starEmpty}
               {starEmpty}
@@ -102,13 +92,20 @@ export default function SecondPage(props) {
           </div>
         </section>
       </div>
-      <section className="products-section">
-         {productsToBeShown}
-         
+      <section className="products-container">
+        {filteredData.map(({ id, name, img, ratingCount, mrp, price }) => (
+          <Products
+            key={id}
+            name={name}
+            img={img}
+            ratingCount={ratingCount}
+            mrp={mrp}
+            price={price}
+          />
+        ))}
       </section>
-
     </div>
   );
-}
+};
 
-// { productName, rating, ratingCount, searchImage,  mrp, price}
+export default SecondPage;
