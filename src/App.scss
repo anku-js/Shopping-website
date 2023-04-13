@@ -422,12 +422,14 @@ ul {
       margin: 0;
      }
   }
-  
-  .latest-trends-items {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: stretch;
-    padding: 10px 0px;
+  .all-suggestions-container  {
+    .latest-trends-items {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: stretch;
+      padding: 10px 0px;
+    }
   }
+  
  }
