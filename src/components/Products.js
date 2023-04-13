@@ -19,7 +19,7 @@ export default function Products({ id, name, img, ratingCount, mrp, price }) {
        <div  className="product-container">
             <ul>
                 <li className="product">
-                    <img src={img} className="searched-image" alt="product image"/>
+                    <img src={img} className="searched-image" alt="product that was searched"/>
                     <div className="information">
                         <p className="product-name">{name}</p>
                         <div className="wishlist" onClick={handleClick}>
