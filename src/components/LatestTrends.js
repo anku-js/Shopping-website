@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export default function LatestTrends(props) {
-console.log(props, "avcn")
+
 const mappedLatestTrends = props?.suggestionData?.map(({ id, name, img})=> 
     <li key={id} className="latesttrends-list">
         <img src={img} className="latest-trends-image" />

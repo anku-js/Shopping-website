@@ -16,7 +16,7 @@ export default function Products({ id, name, img, ratingCount, mrp, price }) {
     const starFilled = <AiFillStar className="filled-star" />;
 
     return (
-       <div className="product-container">
+       <div  className="product-container">
             <ul>
                 <li className="product">
                     <img src={img} className="searched-image" />
@@ -48,9 +48,11 @@ export default function Products({ id, name, img, ratingCount, mrp, price }) {
                     </div>
                     <div className="view-product">
                         <p className="view-product-text">View Product</p>
-                    </div>
+                   </div>
                 </li>
+                
             </ul>
+            
        </div>
          
     )

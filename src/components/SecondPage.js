@@ -105,6 +105,7 @@ export default function SecondPage(props) {
       </div>
       <section className="products-section">
          {productsToBeShown}
+         
       </section>
 
     </div>

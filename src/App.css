@@ -207,13 +207,14 @@ h1 {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  gap: 23px;
-  padding: 50px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 40px;
  }
 
  .product {
   position: relative;
-  margin: 10px;
+  margin: 20px;
  }
 
  .searched-image {
@@ -304,17 +305,19 @@ h1 {
 
 .view-product {
   position: absolute;
-  top: 252px;
-  width: 100%;
+  top: 250px;
   height: 48px;
   opacity: 0.8;
   padding: 0px;
   display: flex;
+  width: 100%;
   justify-content: center;
   align-items: center;
   background: rgba(109, 132, 255, 0.71);
   z-index: 0;
+  cursor: pointer;
 }
+
 
 .view-product-text { 
   color: #FFFFFF;
