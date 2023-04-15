@@ -204,11 +204,15 @@ ul {
   }
   .products-container {
     width: 100%;
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
     padding: 40px;
+    a {
+      text-decoration: none;
+    }
     .product {
       position: relative;
       margin: 20px;
@@ -263,21 +267,21 @@ ul {
           font-size: 14px;
           padding: 6px 0px;
         }
-        .filled-heart,
-        .empty-heart {
-          z-index: 1;
-          width: 30px;
-          height: 30px;
-          position: absolute;
-          top: 15px;
-          right: 12px;
-          color: #ffffff;
-        }
-
-        .filled-heart {
-          color: #d32424;
-        }
       }
+    }
+    .filled-heart,
+    .empty-heart {
+      z-index: 1;
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top: 15px;
+      right: 12px;
+      color: #ffffff;
+    }
+
+    .filled-heart {
+      color: #d32424;
     }
   }
 }

@@ -18,9 +18,10 @@ const Products: FunctionComponent<ProductData> = ({
   const starFilledIcon = <AiFillStar className="filled-star" />;
 
   return (
-    <div className="product-list">
-      <ul>
-        <li className="product">
+    <div>
+      <ul className="product">
+        <a href="#" target="_blank">
+        <li>
           <img
             src={img}
             className="searched-image"
@@ -28,13 +29,7 @@ const Products: FunctionComponent<ProductData> = ({
           />
           <div className="information">
             <p className="product-name">{name}</p>
-            <div className="wishlist" onClick={handleClick}>
-              {wishlist ? (
-                <AiFillHeart className="filled-heart" />
-              ) : (
-                <AiOutlineHeart className="empty-heart" />
-              )}
-            </div>
+            
             <div className="mrp-price">
               <p className="mrp">
                 <s>Rs. {mrp}</s>
@@ -56,7 +51,16 @@ const Products: FunctionComponent<ProductData> = ({
             <p className="view-product-text">View Product</p>
           </div>
         </li>
+        </a>
+        <div className="wishlist" onClick={handleClick}>
+              {wishlist ? (
+                <AiFillHeart className="filled-heart" />
+              ) : (
+                <AiOutlineHeart className="empty-heart" />
+              )}
+            </div>
       </ul>
+     
     </div>
   );
 };
