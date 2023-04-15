@@ -37,14 +37,8 @@ const Products: FunctionComponent<ProductData> = ({
               <p className="product-price">Rs. {price}</p>
             </div>
             <div className="rating-count">
-              <div>
-                {starFilledIcon}
-                {starFilledIcon}
-                {starFilledIcon}
-                {starFilledIcon}
-                {starFilledIcon}
-              </div>
-              <div className="rating-count">
+              
+              
                 <div>
                   {starFilledIcon}
                   {starFilledIcon}
@@ -52,6 +46,7 @@ const Products: FunctionComponent<ProductData> = ({
                   {starFilledIcon}
                   {starFilledIcon}
                 </div>
+                <div>
                 <div>({ratingCount})</div>
               </div>
             </div>
