@@ -91,14 +91,13 @@ input:focus {
     padding: 30px 40px;
   }
   h2 {
-    margin-top: 10px;
+    padding: 10px 0px;
     word-spacing: 2px;
     font-weight: 520;
     font-size: $heading;
     line-height: 27px;
   }
   p {
-    word-spacing: 2%;
     padding: 6px 0px;
   }
   .latest-trends-items {
@@ -123,7 +122,6 @@ input:focus {
   }
   .popular-suggestions-p {
     font-size: 14px;
-    padding: 10px 0px;
     color: #000000;
   }
 }
@@ -136,6 +134,7 @@ ul {
   display: flex;
   width: 100%;
   .sidebar-container {
+    font-family: "Inter";
     width: 20%;
     background-color: #ffffff;
     padding: 40px;
@@ -145,6 +144,7 @@ ul {
       line-height: 48px;
     }
     .brand {
+      font-family: "Inter";
       padding: 10px 0px;
       font-weight: 500;
       font-size: $heading;
@@ -204,11 +204,15 @@ ul {
   }
   .products-container {
     width: 100%;
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
     padding: 40px;
+    a {
+      text-decoration: none;
+    }
     .product {
       position: relative;
       margin: 20px;
@@ -235,6 +239,7 @@ ul {
           white-space: nowrap;
           width: 220px;
           font-weight: 400;
+          padding: 5px 0px;
           font-size: $heading;
           color: #000000;
         }
@@ -243,6 +248,7 @@ ul {
           align-items: center;
           flex-wrap: wrap;
           gap: 8px;
+          padding: 5px 0px;
         }
         .mrp {
           font-weight: 300;
@@ -263,21 +269,21 @@ ul {
           font-size: 14px;
           padding: 6px 0px;
         }
-        .filled-heart,
-        .empty-heart {
-          z-index: 1;
-          width: 30px;
-          height: 30px;
-          position: absolute;
-          top: 15px;
-          right: 12px;
-          color: #ffffff;
-        }
-
-        .filled-heart {
-          color: #d32424;
-        }
       }
+    }
+    .filled-heart,
+    .empty-heart {
+      z-index: 1;
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top: 15px;
+      right: 12px;
+      color: #ffffff;
+    }
+
+    .filled-heart {
+      color: #d32424;
     }
   }
 }
