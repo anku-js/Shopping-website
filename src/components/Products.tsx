@@ -44,7 +44,19 @@ const Products: FunctionComponent<ProductData> = ({
                 {starFilledIcon}
                 {starFilledIcon}
               </div>
-              <div>({ratingCount})</div>
+              <div className="rating-count">
+                <div>
+                  {starFilledIcon}
+                  {starFilledIcon}
+                  {starFilledIcon}
+                  {starFilledIcon}
+                  {starFilledIcon}
+                </div>
+                <div>({ratingCount})</div>
+              </div>
+            </div>
+            <div className="view-product">
+              <p className="view-product-text">View Product</p>
             </div>
           </div>
           <div className="view-product">

@@ -91,14 +91,13 @@ input:focus {
     padding: 30px 40px;
   }
   h2 {
-    margin-top: 10px;
+    padding: 10px 0px;
     word-spacing: 2px;
     font-weight: 520;
     font-size: $heading;
     line-height: 27px;
   }
   p {
-    word-spacing: 2%;
     padding: 6px 0px;
   }
   .latest-trends-items {
@@ -123,7 +122,6 @@ input:focus {
   }
   .popular-suggestions-p {
     font-size: 14px;
-    padding: 10px 0px;
     color: #000000;
   }
 }
@@ -136,6 +134,7 @@ ul {
   display: flex;
   width: 100%;
   .sidebar-container {
+    font-family: "Inter";
     width: 20%;
     background-color: #ffffff;
     padding: 40px;
@@ -145,6 +144,7 @@ ul {
       line-height: 48px;
     }
     .brand {
+      font-family: "Inter";
       padding: 10px 0px;
       font-weight: 500;
       font-size: $heading;
@@ -239,6 +239,7 @@ ul {
           white-space: nowrap;
           width: 220px;
           font-weight: 400;
+          padding: 5px 0px;
           font-size: $heading;
           color: #000000;
         }
@@ -247,6 +248,7 @@ ul {
           align-items: center;
           flex-wrap: wrap;
           gap: 8px;
+          padding: 5px 0px;
         }
         .mrp {
           font-weight: 300;
