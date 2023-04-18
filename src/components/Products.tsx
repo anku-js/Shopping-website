@@ -21,24 +21,22 @@ const Products: FunctionComponent<ProductData> = ({
     <div>
       <ul className="product">
         <a href="#" target="_blank">
-        <li>
-          <img
-            src={img}
-            className="searched-image"
-            alt="product that was searched"
-          />
-          <div className="information">
-            <p className="product-name">{name}</p>
-            
-            <div className="mrp-price">
-              <p className="mrp">
-                <s>Rs. {mrp}</s>
-              </p>
-              <p className="product-price">Rs. {price}</p>
-            </div>
-            <div className="rating-count">
-              
-              
+          <li>
+            <img
+              src={img}
+              className="searched-image"
+              alt="product that was searched"
+            />
+            <div className="information">
+              <p className="product-name">{name}</p>
+
+              <div className="mrp-price">
+                <p className="mrp">
+                  <s>Rs. {mrp}</s>
+                </p>
+                <p className="product-price">Rs. {price}</p>
+              </div>
+              <div className="rating-count">
                 <div>
                   {starFilledIcon}
                   {starFilledIcon}
@@ -47,27 +45,26 @@ const Products: FunctionComponent<ProductData> = ({
                   {starFilledIcon}
                 </div>
                 <div>
-                <div>({ratingCount})</div>
+                  <div>({ratingCount})</div>
+                </div>
+              </div>
+              <div className="view-product">
+                <p className="view-product-text">View Product</p>
               </div>
             </div>
             <div className="view-product">
               <p className="view-product-text">View Product</p>
             </div>
-          </div>
-          <div className="view-product">
-            <p className="view-product-text">View Product</p>
-          </div>
-        </li>
+          </li>
         </a>
-        <div className="wishlist" onClick={handleClick}>
-              {wishlist ? (
-                <AiFillHeart className="filled-heart" />
-              ) : (
-                <AiOutlineHeart className="empty-heart" />
-              )}
-            </div>
+        <div onClick={handleClick}>
+          {wishlist ? (
+            <AiFillHeart className="filled-heart" />
+          ) : (
+            <AiOutlineHeart className="empty-heart" />
+          )}
+        </div>
       </ul>
-     
     </div>
   );
 };

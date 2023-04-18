@@ -1,5 +1,8 @@
 import React, { useState, useEffect, ChangeEvent } from "react";
 import { CiSearch } from "react-icons/ci";
+import { AiOutlineHeart } from "react-icons/ai";
+import { TbLetterA, TbLetterN, TbLetterK, TbLetterU } from "react-icons/tb";
+import { BsHandbag } from "react-icons/bs";
 import LatestTrends from "./components/LatestTrends";
 import SecondPage from "./components/SecondPage";
 import "./App.scss";
@@ -46,29 +49,64 @@ const App = () => {
   return (
     <section className={`wrapping-box ${!!searched ? "searching" : ""}`}>
       <div className="container">
-        <img
-          src="https://ik.imagekit.io/ankujs/zevi_logo.svg"
-          className="zevi-logo"
-          alt="zevi's logo"
-        />
-        <form className="input-form">
-          <label className="search-label">
-            <input
-              type="text"
-              name="searched-product"
-              className="search-input"
-              placeholder="Search"
-              onChange={searchedProduct}
-              onFocus={handleOnFocus}
-            />
-          </label>
-          <CiSearch className="searchIcon" />
-        </form>
-        {isInputFocused && searched.length === 0 ? (
-          <LatestTrends trends={trends} />
-        ) : null}
-        {searched !== "" ? <SecondPage filteredData={filteredData} /> : null}
+        <div className="header-box">
+          {searched ? (
+            <div>
+              <div className="shopping-categories">
+                <a href="#" className="men-section">
+                  Men
+                </a>
+                <a href="#" className="women-section">
+                  Women
+                </a>
+                <a href="#" className="kids-section">
+                  Kids
+                </a>
+                <a href="#" className="cosmetics-section">
+                  Cosmetics
+                </a>
+              </div>
+            </div>
+          ) : (
+            ""
+          )}
+
+          <div className="search-action">
+            <form className="input-form">
+              <label className="search-label">
+                <input
+                  type="text"
+                  name="searched-product"
+                  className="search-input"
+                  placeholder="Search"
+                  onChange={searchedProduct}
+                  onFocus={handleOnFocus}
+                />
+              </label>
+              <CiSearch className="searchIcon" />
+            </form>
+            {!!searched ? (
+              <div className="actions">
+                <a className="wishlist">
+                  <AiOutlineHeart className="wishlist-icon" />
+                  <p>Wishlist</p>
+                </a>
+                <a className="cart">
+                  <BsHandbag className="cart-icon" />
+                  <p>Bag</p>
+                </a>
+              </div>
+            ) : (
+              ""
+            )}
+          </div>
+        </div>
       </div>
+
+      {isInputFocused && searched.length === 0 ? (
+        <LatestTrends trends={trends} />
+      ) : null}
+      {searched !== "" ? <SecondPage filteredData={filteredData} /> : null}
     </section>
   );
 };

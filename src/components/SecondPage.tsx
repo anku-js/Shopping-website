@@ -1,6 +1,7 @@
 import React, { FunctionComponent } from "react";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 import { IoIosArrowDown } from "react-icons/io";
+
 import Products from "./Products";
 import { ProductData } from "./../types";
 
@@ -14,6 +15,7 @@ const SecondPage: FunctionComponent<Props> = ({ filteredData }) => {
 
   return (
     <div className="searched-page-container">
+     
       <div className="sidebar-container">
         <h1>Search Results</h1>
         <section className="sidebar-section">
@@ -92,6 +94,7 @@ const SecondPage: FunctionComponent<Props> = ({ filteredData }) => {
           </div>
         </section>
       </div>
+     
       <section className="products-container">
         {filteredData.map(({ id, name, img, ratingCount, mrp, price }) => (
           <Products
@@ -103,7 +106,9 @@ const SecondPage: FunctionComponent<Props> = ({ filteredData }) => {
             price={price}
           />
         ))}
-        {filteredData.length === 0 && <p className="no-data">No results found</p> }
+        {filteredData.length === 0 && (
+          <p className="no-data">No results found</p>
+        )}
       </section>
     </div>
   );
