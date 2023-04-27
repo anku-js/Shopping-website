@@ -20,7 +20,7 @@ const Products: FunctionComponent<ProductData> = ({
   return (
     <div>
       <ul className="product">
-        <a href="#" target="_blank">
+        <a target="_blank">
           <li>
             <img
               src={img}
